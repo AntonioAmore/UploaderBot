@@ -10,6 +10,7 @@ The app resizes given images and saves them to  remote cloud storage.
 - run ```composer.phar install```
 - create Dropbox [application](https://www.dropbox.com/developers/apps/)
 - copy ```dropbox-client-secret.json.dist``` to ```dropbox-client-secret.json```
+- make ./bot executable
 
 ##Usage
     command [arguments]
