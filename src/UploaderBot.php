@@ -76,6 +76,7 @@ Available commands:
     status      Output current status in format %queue%:%number_of_images%
     upload      Upload next images to remote storage
     retry       Re-upload failed images from queue
+
 EOD;
     }
 
