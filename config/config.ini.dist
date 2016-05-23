@@ -3,7 +3,7 @@ outputDir=./images_resized
 
 [rabbitMQ]
 host=localhost
-port=4369
+port=5672
 user=guest
 password=guest
 
