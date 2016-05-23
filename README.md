@@ -29,10 +29,4 @@ Run command ```sudo docker build -t "uploader_bot" ./config``` to build the imag
 
 The following command allows to run the container ```sudo docker run  --name test_instance -i -t uploader_bot``` with name ```test_instance```
 
-To run the application execute ```/var/www/UploaderBot/bot
-
-##Known issues
-
-There is nothing ideal in this World. I'm working on fixing issues listed below
-
-- You have to run ```service rabbitmq-server start``` when launch the container.
+To run the application execute ```./bot```

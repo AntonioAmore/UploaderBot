@@ -53,10 +53,17 @@ RUN mkdir /var/www/UploaderBot/images
 RUN mkdir /var/www/UploaderBot/images_resized
 
 ##################### INSTALLATION END #####################
-RUN echo -e "\nexport TERM=xterm" >> ~/.bashrc
-RUN update-rc.d rabbitmq-server enable
+RUN echo "\nexport TERM=xterm" >> ~/.bashrc
+
+#to disable rc.d warrning about rabbitmq runlevels
+RUN update-rc.d -f rabbitmq-server remove
+RUN update-rc.d rabbitmq-server defaults
+
 RUN echo "\n***************************************************************\n\
 You have create and configure Dropbox API application manually!\
 \n***************************************************************\n"
 
-ENTRYPOINT ["/bin/bash"]
+WORKDIR /var/www/UploaderBot
+
+#to be sure rabbitmq-server is started when container runs
+ENTRYPOINT service rabbitmq-server start && /bin/bash
