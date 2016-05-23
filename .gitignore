@@ -1,0 +1,6 @@
+.idea/
+/config/config.ini
+/config/dropbox-client-secret.json
+/config/dropbox-client-token
+/composer.phar
+/vendor/

@@ -1,0 +1,17 @@
+tmpDir=./tmp
+outputDir=./images_resized
+
+[rabbitMQ]
+host=localhost
+port=5672
+user=guest
+password=guest
+
+[image]
+extension=jpg
+width=640
+height=640
+
+[dropbox]
+appName="Uploader Bot"
+

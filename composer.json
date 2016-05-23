@@ -1,0 +1,23 @@
+{
+    "name": "AntonioAmore/UploaderBot",
+    "description": "The app resizes given images and saves them to  remote cloud storage.",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "AntonioAmore",
+            "email": "AntonioAmore@users.noreply.github.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "UploaderBot\\": "src/"
+        }
+    },
+
+    "require": {
+        "php-amqplib/php-amqplib": "2.5.*",
+        "dropbox/dropbox-sdk": "1.1.*"
+    }
+}
