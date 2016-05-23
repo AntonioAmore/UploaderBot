@@ -1,5 +1,6 @@
 # UploaderBot
 The app resizes given images and saves them to  remote cloud storage.
+
 ##Installation
 - Install RabbitMQ ([reference](https://www.rabbitmq.com/download.html))
 - copy ```./config/config.ini.dist``` to ```./config/config.ini```
@@ -9,8 +10,10 @@ The app resizes given images and saves them to  remote cloud storage.
 - run ```composer.phar install```
 - create Dropbox [application](https://www.dropbox.com/developers/apps/)
 - copy ```dropbox-client-secret.json.dist``` to ```dropbox-client-secret.json```
+
 ##Usage
     command [arguments]
+
 ##Available commands
 - **schedule**    Add filenames to resize queue
 - **resize**      Resize next images from the queue
