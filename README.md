@@ -21,3 +21,18 @@ The app resizes given images and saves them to  remote cloud storage.
 - **status**      Output current status in format %queue%:%number_of_images%
 - **upload**      Upload next images to remote storage
 - **retry**       Re-upload failed images from queue
+
+#Docker
+There is a docker image which allow deploy and test the project without actual environment setup
+##Usage
+Run command ```sudo docker build -t "uploader_bot" ./config``` to build the image
+
+The following command allows to run the container ```sudo docker run  --name test_instance -i -t uploader_bot``` with name ```test_instance```
+
+To run the application execute ```/var/www/UploaderBot/bot
+
+##Known issues
+
+There is nothing ideal in this World. I'm working on fixing issues listed below
+
+- You have to run ```service rabbitmq-server start``` when launch the container.
